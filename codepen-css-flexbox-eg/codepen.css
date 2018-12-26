@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #ccc;
+  padding: 10px;
+  height: 1000px;
+
+  /*  Defines Elements along the Main(Y)-Axis -vertical/left-right/row  */
+  display: flex;
+  flex-direction: row;
+  /*   flex-direction: row-reverse; */
+  /*   flex-direction: column; */
+  /*   flex-direction: column-reverse; */
+
+  /*   justify-content: center; */
+  justify-content: space-between;
+  /*   justify-content: space-around;
+justify-content: space-evenly;  */
+  /*   justify-content: flex-end; */
+  /*   justify-content: flex-start; */
+  /*   justify-content: center; */
+
+  /*  Defines Elements along the Cross(X)-Axis -horizontal/up-down/column  */
+  align-items: center;
+  /* align-items: flex-start;
+   align-items: flex-end; */
+  /*   align-items: stretch; */
+  /*   align-items: baseline;*/
+
+  flex-wrap: wrap;
+  /*   align-content: start;
+align-content: center;
+align-content: end; */
+  /*   align-content: around; */
+  /*   align-content: between; */
+  align-content: stretch;
+}
+
+.item {
+  background-color: #f1425d;
+  padding: 30px;
+  margin: 5px;
+  color: #fff;
+  font-size: 40px;
+
+  /*   flex-grow: 1; */
+  /*   flex: 1; */
+}
+
+.i2 {
+  height: 200px;
+
+  /*   order: 2; */
+
+  /*   flex-grow: 3; */
+  /*   flex: 3; */
+
+  /*  Sets the width/dimensions of a container  */
+  /*   flex-basis: 300px;
+   flex-shrink: 0; */
+  flex: 0 1 300px;
+}
+
+.i3 {
+  order: 1;
+}
+
+.i4 {
+  /*   align-self: flex-start;
+align-self: flex-stretch; */
+  /*   align-self: flex-end; */
+  order: -1;
+  flex: 1;
+}
