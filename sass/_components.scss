@@ -3,7 +3,7 @@
 // LOGO
 .logo {
   height: 3.25rem;
-  margin-left: 3rem;
+  margin-left: 2rem;
 }
 
 ////////////////////////////////////////////////
@@ -38,7 +38,7 @@
     -o-transition: all .2s;
     transition: all .2s;
 
-    &:focus { 
+    &:focus {
       outline: none;
       width: 100%;
       background-color: var(--color-grey-light-3);
@@ -48,9 +48,9 @@
       font-weight: 100;
       color: var(--color-grey-light-4);
     }
-}
+  }
 
-  &__input:focus + &__button {
+  &__input:focus+&__button {
     background-color: var(--color-grey-light-3);
   }
 
@@ -68,7 +68,7 @@
       -ms-transform: translateY(2px);
       -o-transform: translateY(2px);
       transform: translateY(2px);
-}
+    }
   }
 
 
@@ -82,7 +82,6 @@
 ////////////////////////////////////////////////
 // USER NAVIGATION 
 .user-nav {
-  background-color: greenyellow;
   align-self: stretch;
 
   display: flex;
@@ -102,6 +101,7 @@
   }
 
   &__icon-box {
+    position: relative;
   }
 
   &__icon {
@@ -111,10 +111,16 @@
   }
 
   &__notification {
+    color: #fff;
     width: 1.75rem;
     height: 1.75rem;
     font-size: .8rem;
-    color: #fff;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--color-primary);
 
     -webkit-border-radius: 50%;
@@ -122,12 +128,11 @@
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     border-radius: 50%;
-  }
-
-  &__user {}
+}
 
   &__user-photo {
     height: 3.75rem;
+    margin-right: 1rem;
 
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -135,6 +140,5 @@
     -o-border-radius: 50%;
     border-radius: 50%;
   }
-
-  &__user-name {}
 }
+
