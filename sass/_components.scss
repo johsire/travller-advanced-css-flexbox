@@ -9,7 +9,7 @@
 ////////////////////////////////////////////////
 // SEARCH 
 .search {
-  flex: 0 0 50%;
+  flex: 0 0 40%;
 
   // NESTED FLEXBOX
   display: flex;
@@ -83,15 +83,46 @@
 // USER NAVIGATION 
 .user-nav {
   background-color: greenyellow;
+  align-self: stretch;
 
-  &__icon-box {}
+  display: flex;
+  align-items: center;
+
+  // Select the User-Nav & All its Direct Children ------->>>
+  & > * {
+    padding: 0 2rem;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  & > *:hover {
+    background-color: var(--color-grey-light-2);
+  }
+
+  &__icon-box {
+  }
 
   &__icon {
     height: 2.25rem;
     width: 2.25rem;
+    fill: var(--color-grey-dark-2);
   }
 
-  &__notification {}
+  &__notification {
+    width: 1.75rem;
+    height: 1.75rem;
+    font-size: .8rem;
+    color: #fff;
+    background-color: var(--color-primary);
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+  }
 
   &__user {}
 
