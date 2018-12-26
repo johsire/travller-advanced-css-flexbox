@@ -3,14 +3,45 @@
 // LOGO
 .logo {
   height: 3.25rem;
+  margin-left: 3rem;
 }
 
 ////////////////////////////////////////////////
 // SEARCH 
 .search {
-  &__input {}
+  background-color: orangered;
+  float: 0 0 40%;
+
+  &__input {
+    width: 90%;
+    border: none;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    padding: .7rem 2rem;
+    background-color: var(--color-grey-light-2);
+
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    border-radius: 100px;
+
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+
+    &:focus { 
+      outline: none;
+      width: 100%;
+      background-color: var(--color-grey-light-3);
+    }
+}
 
   &__button {}
+
 
   &__icon {
     height: 2rem;
@@ -21,6 +52,8 @@
 ////////////////////////////////////////////////
 // USER NAVIGATION 
 .user-nav {
+  background-color: greenyellow;
+
   &__icon-box {}
 
   &__icon {
@@ -43,5 +76,4 @@
   }
 
   &__user-name {}
-
 }
