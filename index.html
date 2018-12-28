@@ -11,14 +11,14 @@
         <title>Trillo &mdash; Your all-in-one booking app</title>
     </head>
     <body>
-        <!-- CONTAINER-SECTION ---START----------------------------------------------->
+        <!-- CONTAINER-SECTION ---START--------------------------------------------- -->
         <div class="container">
-            <!-- HEADER SECTION------START ------------------>
+            <!-- HEADER SECTION------START ---------------- -->
             <header class="header">
                 <img src="img/logo.png" alt="Trillo Logo" class="logo">
 
                 <form action="#" class="search">
-                    <!-- SEARCH-ICON-(magnifying-glass)-&-SEARCH-BUTTON---START-Section--->
+                    <!-- SEARCH-ICON-(magnifying-glass)-&-SEARCH-BUTTON---START-Section- -->
                     <input type="text" class="search__input" placeholder="Search hotels">
                     <button class="search__button">
                         <svg class="search__icon">
@@ -28,7 +28,7 @@
                 </form>
 
                 <nav class="user-nav">
-                    <!-- BOOKMARK-ICON------START-Section--->
+                    <!-- BOOKMARK-ICON------START-Section- -->
                     <div class="user-nav__icon-box">
                         <svg class="user-nav__icon">
                             <use xlink:href="img/sprite.svg#icon-bookmark"></use>
@@ -37,7 +37,7 @@
                         <!-- USER-NOTIFICATION-ICON----Goes-Here--in A-Span-Element -->
                         <span class="user-nav__notification">7</span>
                     </div>
-                    <!-- BOOKMARK-ICON------START-Section----->
+                    <!-- BOOKMARK-ICON------START-Section--- -->
                     <div class="user-nav__icon-box">
                             <svg class="user-nav__icon">
                                 <use xlink:href="img/sprite.svg#icon-chat"></use>
@@ -51,9 +51,10 @@
                 </nav>
             </header>
 
-            <!-- SIDE-BAR-/-NAV-SECTION------START ----------->
+            <!-- SIDE-BAR-/-NAV-SECTION------START --------- -->
             <div class="content">
                 <nav class="sidebar">
+                    
                     <ul class="side-nav">
                         <li class="side-nav__item side-nav__item--active">
                            <a href="#" class="side-nav__link">
@@ -63,6 +64,7 @@
                                <span>Hotel</span>
                            </a> 
                         </li>
+
                         <li class="side-nav__item">
                             <a href="#" class="side-nav__link">
                                 <svg class="side-nav__icon">
@@ -71,6 +73,7 @@
                                 <span>Flight</span>
                             </a> 
                          </li>
+
                          <li class="side-nav__item">
                             <a href="#" class="side-nav__link">
                                 <svg class="side-nav__icon">
@@ -79,6 +82,7 @@
                                 <span>Car Rental</span>
                             </a> 
                          </li>
+
                          <li class="side-nav__item">
                             <a href="#" class="side-nav__link">
                                 <svg class="side-nav__icon">
@@ -93,9 +97,56 @@
                         &copy; 2018 by trillo. ALl rights reserved.
                     </div>
                 </nav>
-                <!-- HOTEL-VIEW-SECTION------START ----------->
+
+                <!-- HOTEL-VIEW-SECTION------START --------- -->
                 <main class="hotel-view">
-                    Hotel View Section
+                    <div class="gallery">
+                        <figure class="gallery__item">
+                            <img src="img/hotel-1.jpg" alt="Hotel 1 photo" class="gallery__photo">
+                        </figure>
+
+                        <figure class="gallery__item">
+                            <img src="img/hotel-2.jpg" alt="Hotel 2 photo" class="gallery__photo">
+                        </figure>
+
+                        <figure class="gallery__item">
+                            <img src="img/hotel-3.jpg" alt="Hotel 3 photo" class="gallery__photo">
+                        </figure>
+                    </div>
+
+                    <div class="overview">
+                        <h1 class="overview__heading">
+                            Hotel Las Palmas
+                        </h1>
+
+                        <!-- 5 - STARS ICONS-------SECTION-START----------------- -->
+                        <div class="overview__stars">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                        </div>
+                        <!-- 5 - STARS ICONS-------SECTION-END----------------- -->
+                        
+                        <div class="overview__location">
+                            
+                        </div>
+                    </div>
                 </main>
             </div>
         </div>

@@ -50,7 +50,7 @@
     }
   }
 
-  &__input:focus+&__button {
+  &__input:focus + &__button {
     background-color: var(--color-grey-light-3);
   }
 
@@ -88,7 +88,7 @@
   align-items: center;
 
   // Select the User-Nav & All its Direct Children ------->>>
-  &>* {
+  & > * {
     padding: 0 2rem;
     cursor: pointer;
     height: 100%;
@@ -96,7 +96,7 @@
     align-items: center;
   }
 
-  &>*:hover {
+  & > *:hover {
     background-color: var(--color-grey-light-2);
   }
 
@@ -165,17 +165,23 @@
     height: 100%;
     width: 3px;
     background-color: var(--color-primary);
+
     -webkit-transform: scaleY(0);
     -moz-transform: scaleY(0);
     -ms-transform: scaleY(0);
     -o-transform: scaleY(0);
     transform: scaleY(0);
-    transition: transform.2s, 
+
+    -webkit-transition: transform.2s, 
                 width .4s cubic-bezier(1, 0, 0, 1).2s, background-color .1s;
-    -webkit-transition: transform.2s, width .4s cubic-bezier(1, 0, 0, 1).2s, background-color .1s;
-    -moz-transition: transform.2s, width .4s cubic-bezier(1, 0, 0, 1).2s, background-color .1s;
-    -ms-transition: transform.2s, width .4s cubic-bezier(1, 0, 0, 1).2s, background-color .1s;
-    -o-transition: transform.2s, width .4s cubic-bezier(1, 0, 0, 1).2s, background-color .1s;
+    -moz-transition: transform.2s, 
+                width .4s cubic-bezier(1, 0, 0, 1).2s, background-color .1s;
+    -ms-transition: transform.2s, 
+                width .4s cubic-bezier(1, 0, 0, 1).2s, background-color .1s;
+    -o-transition: transform.2s, 
+                width .4s cubic-bezier(1, 0, 0, 1).2s, background-color .1s;
+    transition: transform.2s, 
+              width .4s cubic-bezier(1, 0, 0, 1).2s, background-color .1s;
 }
 
   &__item:hover::before,
@@ -222,4 +228,16 @@
   color: var(--color-grey-light-4);
   text-align: center;
   padding: 2.5rem;
+}
+
+////////////////////////////////////////////////
+//  GALLERY
+.gallery {
+  display: flex;
+
+  &__photo {
+    width: 100%;
+    display: block;
+  }
+
 }
